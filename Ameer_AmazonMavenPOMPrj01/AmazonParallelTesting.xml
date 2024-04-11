@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="AmazonPreRequist.AmazonListner"></listener>
+	</listeners>
+  <test thread-count="5" name="AmazonParallelTesting">
+	  <groups>
+		  <run>
+			  <include name="smoke"></include>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="AmazonMavenPOM_Test.Amazon_TC08"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC09"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC13"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC02"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC14"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC03"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC11"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC01"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC12"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC06"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC07"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC04"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC15"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC05"/>
+      <class name="AmazonMavenPOM_Test.Amazon_TC10"/>
+    </classes>
+  </test> <!-- AmazonParallelTesting -->
+</suite> <!-- Suite -->
